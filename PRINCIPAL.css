@@ -1,0 +1,121 @@
+
+body{
+    background-color: rgb(249, 168, 168);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  font-style: oblique;
+  font-weight: 100;
+  background-image: url("img/1.jpg");
+  background-repeat: repeat-x;
+  background-size: 9cm;
+  
+  
+}
+#title{
+    color: #0A18CC;
+    font-size: 1cm;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+#title3{
+    color: #fcfafa;
+    font-size: 0.8cm;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+#title2{
+  color: #0400db;
+  text-align: justify;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  
+}
+
+#title4{
+  color: #0400db;
+  text-align: justify;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  
+}
+
+.div-grande {
+  width: 150px;
+  height: 250px;
+  border: solid 0.5 px #040404;
+  background-color: rgb(255, 188, 250);
+  color: rgb(3, 3, 3);
+  margin: 30px;
+  text-align: left;
+  padding-left: 0.5em;
+  float: left;
+ 
+}
+p {
+ 
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 20px;
+  text-align: justify;
+  padding-right: 150px;
+  padding-left: 300px;
+  line-height: 30px;
+}
+.div-unidades {
+  width: 190px;
+  height: 350px;
+  border: solid 0.5 px #040404;
+  background-color: rgb(255, 188, 250);
+  color: rgb(3, 3, 3);
+  margin: 30px;
+  text-align: left;
+  padding-left: 0.5em;
+  float: left;
+}
+
+.div-unidades1 {
+  width: 190px;
+  height: 700px;
+  border: solid 0.5 px #040404;
+  background-color: rgb(255, 188, 250);
+  color: rgb(3, 3, 3);
+  margin: 30px;
+  text-align: left;
+  padding-left: 0.5em;
+  float: left;
+}
+p.centrado{
+  text-align: center;
+}
+.div-inicio {
+  width: 150px;
+  
+  border: solid 1px  rgb(255, 188, 250);
+  background-color:  rgb(255, 188, 250);
+  color: rgb(3, 3, 3);
+  margin: 30px;
+  text-align: left;
+  padding-left: 0.5em;
+  float: left;
+}
+.div-unidades4 {
+  width: 190px;
+  height: 750px;
+  border: solid 0.5 px #040404;
+  background-color: rgb(255, 188, 250);
+  color: rgb(3, 3, 3);
+  margin: 30px;
+  text-align: left;
+  padding-left: 0.5em;
+  float: left;
+}
+.div-unidades3 {
+  width: 190px;
+  height: 1020px;
+  border: solid 0.5 px #040404;
+  background-color: rgb(255, 188, 250);
+  color: rgb(3, 3, 3);
+  margin: 30px;
+  text-align: left;
+  padding-left: 0.5em;
+  float: left;
+} 

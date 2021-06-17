@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Yazmin Garcia" />
+    <!--Pestaña-->
+    <title>UNIDAD 1 </title>
+    <link rel="stylesheet" href="PRINCIPAL.css">
+</head>
+
+<body>
+    <a name="inicio">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1 id="title3" style="color: black;">ARQUITECTURAS DE CÓMPUTO </h1>
+
+        <div class="div-inicio">
+
+            <a href="index.html" target="_self"> VOLVER AL INICIO</a>
+        </div><br><br><br><br><br><br>
+        <div class="div-unidades">
+            <h4 style="font-family: Arial, Helvetica, sans-serif; color: black; font-size: 18px; text-align: center;">
+                TEMARIO
+            </h4>
+            <li>
+                <a href="#1.1" target="_self" id="title4"> 1.1 MODELOS DE ARQUU DE CÓMPUTO</a>
+            </li><br />
+            <li>
+                <a href="#1.2" target="_self" id="title4"> 1.2 ANÁLISIS DE LOS COMPONENTES</a>
+            </li><br />
+            <li>
+                <a href="#1.2.2" target="_self" id="title4"> 1.2.2 MEMORIA</a>
+            </li><br />
+            <li>
+                <a href="#1.2.3" target="_self" id="title4"> 1.2.3 MANEJO DE LA ENTRADA/SALIDA</a>
+            </li><br />
+            <li>
+                <a href="#1.2.4" target="_self" id="title4"> 1.2.4 BUSES</a>
+            </li><br />
+
+        </div>
+
+    </a>
+    <p class="centrado">
+        <img src="img/arqcomp.jpg" width="250px">
+
+    </p><br />
+
+
+    <a name="1.1">
+        <h1
+            style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: rgb(34, 103, 230); text-align: center;">
+            1.1 MODELOS DE ARQUITECTURAS DE CÓMPUTO
+        </h1><br /><br />
+
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            La arquitectura de computadoras se refiere a los atributos de un sistema que son visibles a un programador o
+            para decirlo de otra manera, son aquellos atributos que tienen un impacto directo en la ejecución lógica de
+            un
+            programa.Entre los ejemplos de atributos arquitectónicos se encuentran:</br>
+            <li style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+                Conjunto de instrucciones</li> <br>
+            <li style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+                Numero de bits utilizados en la representacion de la información (caracteres, números,etc)</li><br>
+            <li style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+                Mecanismos de entrada y salida</li><br>
+            <li style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+                Téncicas de direccionamiento de memoria</li>
+            </br>
+        </p>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            La organización de las computadoras se refiere a las unidades funcionales y sus
+            interconexiones, que materializan las especificaciones arquitectónicas. Entre los atributos de organización
+            se
+            incluyen aquellos detalles de hardware que son transparentes al programador, tales como:</br>
+            <li style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+                Señales de control</li> <br>
+            <li style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+                Interfaces ente la computadora y los periféricos</li><br>
+            <li style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+                Tecnología de las memorias utilizadas</li><br>
+
+        </p>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            En términos generales una computadora realiza cuatro funciones:</br>
+
+        </p>
+        <p class="centrado">
+            <img src="img/2.jpg" width="450px">
+
+        </p></br>
+
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: cornsilk; text-align: center;">
+            1.1.1 CLÁSICAS
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            Estas arquitecturas se desarrollaron en las primeras computadoras electromecánicas y de tubos de vacío. Aun
+            son usadas en procesadores empotrados de gama baja y son la base de la mayoría de las arquitecturas
+            modernas. </br><br>
+        </p></br>
+        <p class="centrado">
+            <img src="img/4.jpg" width="300px">
+
+        </p>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            <b>Arquitectura Mauchly-Eckert (Von Newman)</b></br>
+            La principal desventaja de esta arquitectura, es que el bus de datos y direcciones único se convierte en un
+            cuello de botella por el cual debe pasar toda la información que se lee de o se escribe a la memoria,
+            obligando a que todos los accesos a esta sean secuenciales. Esto limita el grado de paralelismo (acciones
+            que se pueden realizar al mismo tiempo) y por lo tanto, el desempeño de la computadora. Este efecto se
+            conoce como el cuello de botella de Von Newman.
+        </p>
+        <p class="centrado">
+            <img src="img/3.jpg" width="250px">
+
+        </p></br>
+
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: cornsilk; text-align: center;">
+            1.1.2 SEGMENTADAS
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            Es una de las tecnologías utilizadas para realizar la segmentación o paralelismo. Divide el procesador, en
+            etapas, procesa una instrucción diferente en cada una y trabaja con varias a la vez. </br>
+            Las arquitecturas segmentadas o con segmentación del cauce buscan mejorar el desempeño realizando
+            paralelamente varias etapas del ciclo de instrucción al mismo tiempo. El procesador se divide en varias
+            unidades funcionales independientes y se dividen entre ellas el procesamiento de las instrucciones.
+        </p></br>
+        <p class="centrado">
+            <img src="img/5.jpg" width="300px">
+
+        </p></br>
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: cornsilk; text-align: center;">
+            1.1.3 DE MULTIPROCESAMIENTO
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            Se denomina multiprocesador a un computador que cuenta con dos o más microprocesadores (CPU’s).
+            El multiprocesador puede ejecutar simultáneamente varios hilos pertenecientes a un mismo proceso o bien a
+            procesos diferentes.
+
+        </p>
+        <p class="centrado">
+            <img src="img/6.jpg" width="300px">
+
+        </p>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            Las CPU de multiprocesamiento:
+            <li style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+                <b>SISO</b> – (Single Instruction, Single Operand ) computadoras independientes
+            </li>
+            <li style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+                <b>SIMO</b> – (Single Instruction, Multiple Operand ) procesadores vectoriales
+            <li style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+                <b>MISO</b> – (Multiple Instruction, Single Operand )
+            <li style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+                <b>No implementado MIMO </b> – (Multiple Instruction, Multiple Operand ) sistemas SMP, Clusters
+            </li>
+        </p>
+        <p class="centrado">
+            <img src="img/7.jpg" width="250px">
+
+        </p>
+    </a></br>
+
+    <a name="1.2">
+        <h1
+            style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: rgb(34, 103, 230); text-align: center;">
+            1.2 ANALISIS DE LOS COMPONENTES
+        </h1><br /><br />
+
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: cornsilk; text-align: center;">
+            1.2.1 ARQUITECTURAS
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            En la arquitectura computacional, CISC es un modelo de arquitectura, en donde los microprocesadores tienen
+            un conjunto instrucciones que caracterizan por ser muy amplio y permitir operaciones complejas entre
+            operandos, situados en la memoria o en los registros internos.<br><br>
+            <b><u>Entre las ventajas de CISC DESTACAN LAS SIGUIENTES:</u></b> <br>
+            *Reduce la dificultad de crear compiladores.<br>
+            *Permite reducir el costo total del sistema.<br>
+            *Reduce los costos de creación de software.<br>
+            *Mejora la compactación de código.<br>
+            *Facilita la depuración de errores.<br><br>
+            Arquitectura computacional, RISC (Reduced Instruction Set
+            Computer) es una filosofía de diseño de CPU para computadora que está a favor de conjuntos de instrucciones
+            pequeñas y simples que toman menor tiempo para ejecutarse.
+        </p>
+        <p class="centrado">
+            <img src="img/risc.gif" width="250px">
+
+        </p>
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: cornsilk; text-align: center;">
+            1.2.1.1 UNIDAD CENTRAL DE PROCESAMIENTO
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            La unidad central de procesamiento, UCP o CPU (por el acrónimo en inglés de central processing unit), o
+            simplemente el procesador o microprocesador, es el componente del computador y otros dispositivos
+            programables, que interpreta las instrucciones contenidas en los programas y procesa los datos.
+            <br>
+
+
+        </p>
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: cornsilk; text-align: center;">
+            1.2.1.2 UNIDAD ARITMETICA LOGICA
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            ALU (Arithmetic Logic Unit) es un circuito digital que realiza como su nombre lo indica las operaciones
+            aritméticas y lógicas entre datos de un circuito; suma, resta, divide y multiplica.
+            Todos los microprocesadores(CPU´s) incluyen al menos una ALU, que varía su poder de complejidad según su
+            finalidad
+
+            <br>
+
+        </p>
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: cornsilk; text-align: center;">
+            1.2.1.3 REGISTROS
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            Los registros que encuentran dentro de cada procesador su función principales almacenar los valores de cada
+            uno de los datos, comandos, instrucciones o estados binarios que son los que ordenan qué dato debe
+            procesarse, así como la forma en la que se debe realizar.
+            Cada registro puede contener una instrucción, una dirección de almacenamiento o cualquier tipo de dato.
+
+            <br>
+
+        </p>
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: cornsilk; text-align: center;">
+            1.2.1.4 BUSES
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            <li style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+                <b> Bus paralelo: </b> Es un bus en el cual los datos son enviados por bytes al mismo tiempo, con la
+                ayuda de varias líneas que tienen funciones fijas. La cantidad de datos enviada es
+                bastante grande con una frecuencia moderada y es igual al
+                ancho de los datos por la frecuencia de funcionamiento. <br>
+            <li style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+                <b> Bus serie: </b> En este los datos son enviados, bit a bit y se reconstruyen por medio de registros o
+                rutinas de software. Está formado por pocos conductores y su ancho de banda depende de la
+                frecuencia.<br>
+            <li style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+                <b> Bus control: </b> Este conjunto de señales se usa para sincronizar las actividades y transacciones
+                con los periféricos del sistema.<br>
+            <li style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+                <b> Bus interno: </b> Este mueve datos entre los componentes internos del microprocesador<br>
+
+            <li style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+                <b> Bus local: </b> De alta velocidad que conecta el procesador a la caché, el controlador de la caché
+                también puede acceder al bus del sistema<br>
+            <li style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+                <b> Bus del sistema : </b> En el está conectada la memoria y por debajo el bus de expansión, al cual se
+                pueden conectar una amplia diversidad de dispositivos, entre el bus del sistema y el bus de
+                expansión<br>
+            <li style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+                <b> Bus externo : </b> Este se utiliza para comunicar el procesador y otras partes, como periféricos y
+                memoria.<br>
+
+
+            </li>
+
+            <br>
+
+        </p>
+
+    </a>
+    <a name="1.2.2">
+        <h1
+            style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: rgb(34, 103, 230); text-align: center;">
+            1.2.2 MEMORIA
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            Es un dispositivo que puede mantenerse en por lo menos dos estados estables por un cierto periodo de tiempo.
+            Cada uno de estos estados estables puede utilizarse para representar un bit.
+            Un dispositivo de memoria completo se forma con varias celdas básicas y los circuitos asociados para poder
+            leer y escribir dichas celdas básicas, agrupadas como localidades de memoria que permitan almacenar un grupo
+            de N bits.
+
+        </p>
+        <p class="centrado">
+            <img src="img/memoria.jpeg" width="250px">
+
+        </p>
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: cornsilk; text-align: center;">
+            1.2.2.1 MEMORIA PRINCIPAL
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            La memoria del semiconductor utiliza en su arquitectura circuitos integrados basados en semiconductores para
+            almacenar información.
+            Existen memorias de semiconductor de ambos tipos: volátiles y no volátiles.
+            En las computadoras modernas, la memoria principal consiste casi exclusivamente en memoria de semiconductor
+            volátil y dinámica, también conocida como memoria dinámica de acceso aleatorio o más comúnmente RAM (Random
+            Access Memory).
+            <br>
+        </p>
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: cornsilk; text-align: center;">
+            1.2.2.2 MEMORIA CACHE
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            La memoria caché es un búfer especial de memoria que poseen las computadoras, que funciona de manera similar
+            a la memoria principal, pero es de menor tamaño y de acceso más rápido.
+            <br><br>
+        </p>
+    </a>
+    <a name="1.2.3">
+        <h1
+            style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: rgb(34, 103, 230); text-align: center;">
+            1.2.3 MANEJO DE LA ENTRADA/SALIDA
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            En computación, entrada/salida, también abreviado E/S o I/O (del original en inglés input/output), es la
+            colección de interfaces que usan las distintas unidades funcionales (subsistemas) de un sistema de
+            procesamiento de información para comunicarse unas con otras, o las señales (información) enviadas a través
+            de esas interfaces. Las entradas son las señales recibidas por la unidad, mientras que las salidas son las
+            señales enviadas por ésta.
+        </p>
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: cornsilk; text-align: center;">
+            1.2.3.1 MODULOS DE LA ENTRADA/SALIDA
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            En primer termino hablaremos de los dispositivos de entrada, que como su nombre lo indica, sirven para
+            introducir datos (información) a la computadora para su proceso. Los datos se leen de los dispositivos
+            de entrada y se almacenan en la memoria central o interna.
+            <br>
+        </p>
+
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: cornsilk; text-align: center;">
+            1.2.3.2 ENTRADA/SALIDA PROGRMADA
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            Los dispositivos de Entrada y Salida permiten la comunicación entre la computadora y el usuario
+            <br>
+        </p>
+
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: cornsilk; text-align: center;">
+            1.2.3.3 ENTRADA/SALIDA MEDIANTE INTERRUPCIONES
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            El problema con E/S programada es que el CPU tiene que esperar un tiempo considerable a que el
+            módulo de E/S en cuestión esté preparado para recibir o transmitir los datos. El CPU debe estar
+            comprobando continuamente el estado del módulo de E/S. Se degrada el desempeño del sistema.
+
+            <br>
+        </p>
+    </a>
+    <a name="1.2.4">
+        <h1
+            style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: rgb(34, 103, 230); text-align: center;">
+            1.2.4 BUSES
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            En arquitectura de computadores, el bus (o canal) es un sistema digital que transfiere datos entre los
+            componentes de una computadora o entre computadoras. Está formado por cables o pistas en un circuito
+            impreso, dispositivos como resistores y condensadores además de circuitos integrados.
+
+        </p>
+
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: cornsilk; text-align: center;">
+            1.2.4.2 ESTRUCTURA DE LOS BUSES
+
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            <u>*Líneas de datos: </u> Llevan datos y también comandos para los dispositivos de entrada / salida.
+            <br><br>
+
+            <u>*Líneas de dirección:</u> Llevan direcciones de memoria en acceso a memoria, o permiten seleccionar un
+            dispositivo conectado al bus.<br><br>
+
+            <u>*Líneas de control:</u> Son señales de control de acceso y uso del bus.<br><br>
+
+            <br>
+        </p>
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: cornsilk; text-align: center;">
+            1.2.4.3 JERARQUIA DE LOS BUSES
+
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            <u>*BUS LOCAL: </u> Conecta al procesador con la cache y con algún dispositivo e/s muy rápido.
+            <br><br>
+
+            <u>*BUS DEL SISTEMA:</u> Conecta al procesador (a través de la cache) con la memoria del sistema y con un
+            segundo nivel de dispositivos de velocidad media. <br><br>
+
+            <u>*BUS DE EXPANSION:</u> Se conecta al bus del sistema y hace de interfaz entre este y los dispositivos más
+            lentos
+            <br><br>
+
+            <br>
+        </p>
+        <p class="centrado">
+            <img src="img/buses.png" width="250px">
+
+        </p>
+    </a>
+    <a name="1.2.5">
+        <h1
+            style="font-family: 'Times New Roman', Times, serif; font-size: 25px; color: rgb(34, 103, 230); text-align: center;">
+            1.2.5 INTERRUPCIONES
+        </h1>
+        <p style="width: 820px; padding-left: 350px; font-family: cambria; font-size: 20px; text-align: justify;">
+            Una interrupción (del inglés Interrupt Request, también conocida como petición de interrupción) es una señal
+            recibida por el procesador de un ordenador, indicando que debe "interrumpir" el curso de ejecución actual y
+            pasar a ejecutar código específico para tratar esta situación.
+            Las interrupciones surgen de la necesidad que tienen los dispositivos periféricos de enviar información al
+            procesador principal de un sistema informático.
+
+        </p>
+        <p class="centrado">
+            <img src="img/interrupciones.jpg" width="250px">
+
+        </p>
+    </a>
+</body>
+
+</html>
